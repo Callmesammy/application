@@ -17,7 +17,7 @@ const Latest = () => {
     
             <div className=" px-3 z-20 grid gap-4 absolute lg:grid-cols-3 lg:px-8 w-full h-full max-h-[screen]">
                 {image.map((item, keys)=>(
-                    <div key={keys} className="w-62 bg-green-100 h flex flex-col h-[24rem] ">
+                    <div key={keys} className="w-62 bg-green-100 h flex flex-col h-[26rem] ">
                         <div className="w-full  bg-white h-[17rem] z-20 flex relative">
                             <Image src={item.pic} fill alt="picture" className="object-fill  "/>
                             <span className="text-white flext z-40 insert-0 bottom-6 justify-end text-sm items-end absolute px-3 p-2 left-3 bg-gray-700">
@@ -35,7 +35,13 @@ const Latest = () => {
                       <div className="px-3 text-md font-semibold pt-1">
                       <h1 className="text-sm">{item.desc}</h1>
                       </div>
-                      <Separator className=""/>
+                      <div className="px-3 pt-2 space-y-2">
+
+                    <Separator className=" size-[0.1rem] w-full bg-green-950"/>
+                        <div className="px-3 justify-between w-full h-10 flex border pt-2 border-green-950">
+                            
+                        </div>
+                      </div>
                     </div>
                 ))}
             </div>
