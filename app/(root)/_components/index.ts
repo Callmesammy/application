@@ -28,3 +28,12 @@ export const image = [
 
     
 ]
+
+export const documents=[
+    "Climate Resilience & Net Zero",
+    "Nature, Natural Capital & Biodiversity", 
+    "Energy Transition", 
+    "Waste & Circularity", 
+    "Social & Community Impact", 
+    "Responsible Sourcing ",
+]

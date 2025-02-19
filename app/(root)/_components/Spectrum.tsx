@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
+import { SiGoogleappsscript } from "react-icons/si";
+import { LiaGoogleWallet } from "react-icons/lia";
+import { SiGooglebigtable } from "react-icons/si";
 
 const Spectrum = () => {
     return (
-        <div className="px-3 w-full h-full flex flex-grow pt-10">
+        <div className="px-3 w-full h-full flex flex-col flex-grow pt-10">
             <div className="grid lg:grid-cols-2 w-full h-full">
             <div className="space-y-5 flex flex-col px-3">
             <h1 className="text-2xl">Full-Spectrum Solutions</h1>
@@ -19,9 +22,19 @@ const Spectrum = () => {
                         <MdArrowOutward className="size-4"/>
                    </div> 
                    </div> 
-                   <div className="w-full h-full justify-end flex relative">
-                   <div className="px-3 flex   w-[24rem] rounded-full bg-green-900/30 relative">
+                   <div className="w-full h-full justify-end lg:flex relative hidden ">
+                   <div className="px-3 flex items-center  justify-center w-[24rem] h-[8rem]  space-x-4 rounded-full bg-green-900/30 relative">
+                        <div className="p-6 h-[6rem]  bg-green-900/20  w-[6rem] items-center flex rounded-full border">
+                        <SiGoogleappsscript className="size-10" />
 
+                        </div>
+                        <div className="p-6 h-[6rem] w-[6rem]  bg-green-900/20   items-center flex rounded-full border">
+                        <LiaGoogleWallet className="size-10"/>
+
+                        </div> <div className="p-6 h-[6rem]  bg-green-900/20   w-[6rem] items-center flex rounded-full border">
+                        <SiGooglebigtable className="size-10"/>
+
+                        </div>
 <div>
                    </div>
 
@@ -29,7 +42,15 @@ const Spectrum = () => {
 </div>
 
 </div>
+
+<div className="grid lg:grid-cols-3 pt-10 px-4">
+    <div className="w-full h-full flex">
+<h1 className="text-lg lg:text-2xl">Strategy and Performance </h1>
+
+    </div>
+</div>
             </div>
+            
             </div>
       );
 }
