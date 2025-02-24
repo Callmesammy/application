@@ -7,6 +7,7 @@ import { LiaGoogleWallet } from "react-icons/lia";
 import { SiGooglebigtable } from "react-icons/si";
 import { useState } from "react";
 import { addfile, addports, docudocu } from ".";
+import { Menulist } from "./menulist";
 
 const Spectrum = () => {
   const [entering, setEnterring] = useState(false);
@@ -53,8 +54,8 @@ const Spectrum = () => {
             <div
               className={`"p-6 h-[6rem]  bg-green-900/20   w-[6rem] items-center flex rounded-full  " ${
                 entering3
-                  ? " justify-center group flex bg-blue-500  w-[6rem] scale-110 transition-colors duration-500 "
-                  : "   flex w-[6rem] justify-center"
+                  ? " justify-center group flex bg-indigo-500  w-[6rem] scale-110 transition-colors duration-500 "
+                  : " flex w-[6rem] justify-center"
               }`}
             >
               <SiGooglebigtable className="size-10 text-white" />
@@ -65,7 +66,7 @@ const Spectrum = () => {
           </div>
         </div>
       </div>
-      <div className="grid justify-center  space-y-4 lg:grid-cols-3  pt-10 px-4 w-full h-full">
+      <div className="grid space-x-3 gap-4 lg:grid-cols-3  pt-10 px-4 w-full h-full">
         <div
           onMouseEnter={() => setEnterring(true)}
           onMouseLeave={() => setEnterring(false)}
@@ -77,11 +78,7 @@ const Spectrum = () => {
         >
           <h1 className="  text-lg underline font-bold lg:text-xl">Strategy and Performance </h1>
           <div className="w-full h-full flex flex-col space-y-3 pt-3">
-            {docudocu.map((item, file) => (
-              <div key={file} className="flex flex-col">
-                {item}
-              </div>
-            ))}
+            <Menulist/>
           </div>
         </div>
         <div
@@ -95,11 +92,7 @@ const Spectrum = () => {
         >
           <h1 className=" underline text-lg font-bold lg:text-xl">Sustability and Challenges </h1>
           <div className="w-full h-full flex flex-col space-y-3 pt-3">
-            {addfile.map((item, file) => (
-              <div key={file} className="flex flex-col">
-                {item}
-              </div>
-            ))}
+           <Menulist/>
           </div>
         </div>
         <div
@@ -113,11 +106,7 @@ const Spectrum = () => {
         >
           <h1 className=" underline text-lg lg:text-xl font-bold">Project Delivery </h1>
           <div className="w-full h-full flex flex-col space-y-3 pt-3">
-            {addports.map((item, file) => (
-              <div key={file} className="flex flex-col">
-                {item}
-              </div>
-            ))}
+           <Menulist/>
           </div>
         </div>
       </div>
