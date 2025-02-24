@@ -5,7 +5,7 @@ import Spectrum from "./_components/Spectrum";
 
 const HomePage = () => {
     return ( 
-        <div className="w-full min-h-screen flex flex-col bg-green-950/80">
+        <div className="w-full max-w-scre overflow-x-clip justify-center items-center  min-h-screen flex flex-col bg-green-950/80">
             
             {/* Header */}
             <HeaderComponent />

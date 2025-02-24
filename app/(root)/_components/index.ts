@@ -29,7 +29,25 @@ export const image = [
     
 ]
 
-export const documents=[
+export const docudocu=[
+    "Climate Resilience & Net Zero",
+    "Nature, Natural Capital & Biodiversity", 
+    "Energy Transition", 
+    "Waste & Circularity", 
+    "Social & Community Impact", 
+    "Responsible Sourcing ",
+]
+
+export const addfile=[
+    "Climate Resilience & Net Zero",
+    "Nature, Natural Capital & Biodiversity", 
+    "Energy Transition", 
+    "Waste & Circularity", 
+    "Social & Community Impact", 
+    "Responsible Sourcing ",
+]
+
+export const addports=[
     "Climate Resilience & Net Zero",
     "Nature, Natural Capital & Biodiversity", 
     "Energy Transition", 
