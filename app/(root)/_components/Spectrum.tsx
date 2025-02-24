@@ -6,7 +6,6 @@ import { SiGoogleappsscript } from "react-icons/si";
 import { LiaGoogleWallet } from "react-icons/lia";
 import { SiGooglebigtable } from "react-icons/si";
 import { useState } from "react";
-import { addfile, addports, docudocu } from ".";
 import { Menulist } from "./menulist";
 
 const Spectrum = () => {
@@ -78,7 +77,10 @@ const Spectrum = () => {
         >
           <h1 className="  text-lg underline font-bold lg:text-xl">Strategy and Performance </h1>
           <div className="w-full h-full flex flex-col space-y-3 pt-3">
-            <Menulist/>
+            <Menulist title="Pixel Pulse" description=" A deep dive into the latest in digital art, design trends, and creative tech innovations." 
+            title2="EcoEdge" description2="Exploring cutting-edge solutions and inspiring stories in sustainability and green living."
+            title3="MindScope" description3="Bite-sized insights on psychology, mental health, and personal growth for everyday life."
+            />
           </div>
         </div>
         <div
@@ -92,7 +94,10 @@ const Spectrum = () => {
         >
           <h1 className=" underline text-lg font-bold lg:text-xl">Sustability and Challenges </h1>
           <div className="w-full h-full flex flex-col space-y-3 pt-3">
-           <Menulist/>
+           <Menulist title="CodeCraft" description=" Quick tips, tutorials, and insights on coding, development trends, and tech innovation." 
+            title2="Finance Fix" description2="Exploring cutting-edge solutions and inspiring stories in sustainability and green living."
+            title3="Future Feast" description3="Exploring food trends, futuristic recipes, and culinary innovations from around the world."
+           />
           </div>
         </div>
         <div
@@ -106,7 +111,10 @@ const Spectrum = () => {
         >
           <h1 className=" underline text-lg lg:text-xl font-bold">Project Delivery </h1>
           <div className="w-full h-full flex flex-col space-y-3 pt-3">
-           <Menulist/>
+           <Menulist  title="Urban Vibes" description="A snapshot of city life, covering trends in fashion, culture, and modern living." 
+            title2="GameGrid" description2="tay ahead in the gaming world with news, reviews, and pro tips for every level."
+            title3="Zen Zone" description3="Your daily dose of mindfulness, relaxation techniques, and mental wellness strategies."
+         />
           </div>
         </div>
       </div>

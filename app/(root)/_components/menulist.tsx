@@ -5,26 +5,41 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion"
   
-  export function Menulist() {
+
+  interface MenuProps{
+    title: string, 
+    description: string, 
+    title2?: string, 
+    description2?: string, 
+    title3?: string, 
+    description3?: string, 
+  }
+  export function Menulist({
+    title,
+    description,
+    title2,
+    description2,
+    title3,
+    description3,
+  }: MenuProps) {
     return (
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
+          <AccordionTrigger>{title}</AccordionTrigger>
           <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
+            {description}
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <AccordionTrigger>Is it styled?</AccordionTrigger>
+          <AccordionTrigger>{title2}</AccordionTrigger>
           <AccordionContent>
-            Yes. It comes with default styles that matches the other
-            components&apos; aesthetic.
+            {description2}
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger>Is it animated?</AccordionTrigger>
+          <AccordionTrigger>{title3}</AccordionTrigger>
           <AccordionContent>
-            Yes. Its animated by default, but you can disable it if you prefer.
+            {description3}
           </AccordionContent>
         </AccordionItem>
       </Accordion>
