@@ -1,3 +1,4 @@
+import { GrindBento } from "./Gridd";
 
 const Working = () => {
     return ( 
@@ -11,7 +12,8 @@ Let me know if you would like any tweaks or a different tone!</p>
           
           
             </div> 
-            <div className="flex pt-10 w-[60rem] h-full">
+            <div className="flex pt-10  h-full">
+                <GrindBento  />
 </div>
         </div>
      );
