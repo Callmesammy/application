@@ -26,8 +26,8 @@ const Spectrum = () => {
             challenges they face today.
           </p>
           <div className="underline text-md w-[18rem] space-y-2 hover:text-green-700 hover:scale-110 duration-500 ease-in-out transition-transform flex justify-between">
-            <Link href="/">Learn more about our process </Link>
-            <MdArrowOutward className="size-4" />
+            <Link href="/" className=" flex animate-bounce ite text-green-800 scale-110 duration-700 ">Learn more about our process 
+            <MdArrowOutward className="size-4 " /></Link>
           </div>
         </div>
         <div className="w-full h-full justify-end lg:flex relative hidden ">
