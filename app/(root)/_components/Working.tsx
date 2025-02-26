@@ -2,7 +2,7 @@ import { LayoutGridDemo } from "./LayoutGridDemo";
 
 const Working = () => {
     return ( 
-        <div className="flex flex-col text-white w-full h-full  md:px-3">
+        <div className=" bg-white/15 rounded flex flex-col text-white w-full h-full  md:px-3">
             <div className="flex  h-full lg:pl-[8rem] px-10 pt-4 flex-col w-full lg:w-[40rem] space-y-4 ">
                 <h1 className="text-xl  lg:text-3xl md:text-2xl"> Why Partner with Us</h1>
 
