@@ -1,12 +1,14 @@
+import FooterPage from "./_components/footer-page";
 import HeaderComponent from "./_components/Header";
 import Latest from "./_components/latest-project";
+import LatestThinking from "./_components/latest-thinking";
 import Principles from "./_components/Principles";
 import Spectrum from "./_components/Spectrum";
 import Working from "./_components/Working";
 
 const HomePage = () => {
     return ( 
-        <div className="w-full max-w-scre overflow-x-clip justify-center items-center  min-h-screen flex flex-col bg-green-950/80">
+        <div className="w-full max-w-scre overflow-x-clip justify-center items-center  min-h-screen flex flex-col bg-green-950/80 z-10">
             
             {/* Header */}
             <HeaderComponent />
@@ -25,6 +27,14 @@ const HomePage = () => {
             <div className="w-full  flex-grow     bg-green-950/80 bg-gradient-to-l via-white/15 from-black/5 to-black-5 min-h-screen">
                 <Working/>
             </div>
+            <div className="w-full  bg-green-50  flex-grow    lg:min-h-[70vh] min-h-[190vh] ">
+
+                <LatestThinking/>
+            </div>
+            <div className="w-full  flex-grow     bg-green-950/80 bg-gradient-to-l via-white/15 from-black/5 to-black-5 min-h-screen">
+                <FooterPage/>
+            </div>
+            
         </div>
     );
 };
