@@ -31,7 +31,7 @@ const HeaderComponent = () => {
     window.location.href = url;
   };
   return (
-    <div className="flex h-full lg:px-4 w-full flex-col pb-4 bg-gradient-to-l via-white/15 from-black/5 to-black/5 space-y-4 overflow-x-clip items-center">
+    <div className="flex h-full lg:px-4 w-full flex-col pb-4 bg-gradient-to-l via-white/15 from-black/5 to-black/5 space-y-4 overflow-x-clip items-center px-2">
       <div className="flex justify-between w-full">
         <div className="flex w-fulll items-center ">
           <div
@@ -46,7 +46,7 @@ const HeaderComponent = () => {
             <Menu />{" "}
           </div>
         </div>
-        <div className="flex right-1 lg:hidden">
+        <div className="flex right-1 lg:hidden ">
             
           <SheetSide />
         </div>

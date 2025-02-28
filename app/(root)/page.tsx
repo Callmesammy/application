@@ -31,7 +31,7 @@ const HomePage = () => {
 
                 <LatestThinking/>
             </div>
-            <div className="w-full  flex-grow     bg-green-950/80 bg-gradient-to-l via-white/15 from-black/5 to-black-5 min-h-screen">
+            <div className="w-full  flex-grow     bg-green-950/80 bg-gradient-to-l via-white/15 from-black/5 to-black-5 min-h-[40rem]">
                 <FooterPage/>
             </div>
             
