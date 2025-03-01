@@ -17,36 +17,36 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    href: "/solutions",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
     title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    href: "/sectors",
     description:
       "For sighted users to preview content available behind a link.",
   },
   {
     title: "Progress",
-    href: "/docs/primitives/progress",
+    href: "/content-hub",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
     title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
+    href: "/about",
     description: "Visually or semantically separates content.",
   },
   {
     title: "Tabs",
-    href: "/docs/primitives/tabs",
+    href: "/contact",
     description:
       "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
   },
   {
     title: "Tooltip",
-    href: "/docs/primitives/tooltip",
+    href: "/about",
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
@@ -94,7 +94,7 @@ export function Menu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className=" ">
-          <Link href="/docs" legacyBehavior passHref className="bg-yellow-900/60">
+          <Link href="/projects" legacyBehavior passHref className="bg-yellow-900/60">
             <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-yellow-900/60"`} >
               Projects
             </NavigationMenuLink>
@@ -138,7 +138,7 @@ export function Menu() {
 
 
         <NavigationMenuItem className="text-md ">
-          <Link href="/docs" legacyBehavior passHref className="text-md">
+          <Link href="/careers" legacyBehavior passHref className="text-md">
             <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-md "`} >
               Careers
             </NavigationMenuLink>
@@ -149,7 +149,7 @@ export function Menu() {
      
 
         <NavigationMenuItem className=" ">
-          <Link href="/docs" legacyBehavior passHref className="bg-yellow-900/60">
+          <Link href="/contacts" legacyBehavior passHref className="bg-yellow-900/60">
             <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-md"`} >
               Contact
             </NavigationMenuLink>
