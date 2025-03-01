@@ -10,9 +10,9 @@
 
   } from "@/components/ui/command"
   
-  export function CommandDemo() {
+  export function CommanD() {
     return (
-      <Command className="rounded-lg  border shadow-md md:min-w-[450px] h-10 ">
+      <Command className="rounded-lg  border shadow-md W-10  h-10 ">
         <CommandInput placeholder="Type a command or search..." />
         <CommandList  className="">
           <CommandEmpty >No results found.</CommandEmpty>

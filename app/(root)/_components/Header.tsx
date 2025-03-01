@@ -3,11 +3,11 @@ import { useEffect } from "react";
 import { PiGooglePhotosLogoThin } from "react-icons/pi";
 import gsap from "gsap";
 import { Menu } from "./Menubar";
-import { CommandDemo } from "./Command";
 import { SheetSide } from "./top-menu";
 import Image from "next/image";
 import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
+import { CommanD } from "./Command";
 
 const HeaderComponent = () => {
   useEffect(() => {
@@ -51,9 +51,9 @@ const HeaderComponent = () => {
           <SheetSide />
         </div>
 
-        <div className="items-center lg:flex hidden w-full  p-2 truncate">
+        <div className="items-center lg:flex hidden w-[17rem]  p-2 ">
           {" "}
-          <CommandDemo />
+          <CommanD />
         </div>
       </div>
       <div className="lg:pt-10 pb-3 px-4 grid lg:grid-cols-2 w-full h-full  space-y-3">
